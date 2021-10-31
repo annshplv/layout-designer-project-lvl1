@@ -1,0 +1,60 @@
+/* ADD FONTS */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('assert/fonts/open_sans/OpenSans.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Neucha';
+    src: url('assert/fonts/neucha/Neucha-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* MAIN COLORS */
+
+:root {
+    --white: #fff;
+    --white50: #d7ccc0;
+    --light: #f5f4f0;
+    --primary: #fe8a02;
+    --primarydark: #42413c;
+    --dark: #2a2626;
+    --dark50: #908d8b;
+    --brown: #b09a81;
+    --blue: #1085c5;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    color: var(--dark);
+    font: 16px/1.6em 'Open Sans', sans-serif;
+}
+
+h1 
+h2 
+h3 {
+    line-height: 1.2em;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 34px;
+}
+
+section {
+    max-width: 1110px;
+    margin: 100px 0px;
+    text-align: center;
+}
