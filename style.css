@@ -1,4 +1,5 @@
 /* ADD FONTS */
+
 @font-face {
     font-family: 'Open Sans';
     src: url('assert/fonts/open_sans/OpenSans.ttf') format('truetype');
@@ -20,6 +21,7 @@
     --white50: #d7ccc0;
     --light: #f5f4f0;
     --primary: #fe8a02;
+    --primary50: #EA7600;
     --primarydark: #42413c;
     --dark: #2a2626;
     --dark50: #908d8b;
@@ -35,14 +37,18 @@ body {
     font: 16px/1.6em 'Open Sans', sans-serif;
 }
 
-h1 
-h2 
+h1, 
+h2, 
 h3 {
+    font-family: 'Neucha', cursive;
     line-height: 1.2em;
 }
 
 h1 {
+    position: absolute;
     font-size: 72px;
+
+    z-index: 1;
 }
 
 h2 {
@@ -53,8 +59,70 @@ h3 {
     font-size: 34px;
 }
 
-section {
-    max-width: 1110px;
-    margin: 100px 0px;
-    text-align: center;
+.text-style {
+    color: var(--primary);
+}
+
+/* BACKGROUNG IMG FOR HEADER  */
+.header-section {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+    background-color: var(--light);
+}
+
+.header-section::before {
+    position: absolute;
+    /* display: block; */
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+
+    background: url(/assert/img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 10%;
+
+    content: '';
+}
+
+/* FIRST PAGE */
+.container {
+    position: relative;
+    min-width: 1110px;
+    padding: 100px 0;
+}
+
+.main-img {
+    position: relative;
+    top: 55px;
+    right: -270px;
+
+    height: 525px;
+}
+
+.text-container {
+    column-count: 2;
+    column-gap: 30px;
+}
+
+.text-container-items:first-child {
+    break-after: column;
+}
+
+/* BUTTON STYLE */
+.btn-info {
+    display: inline-block;
+    font-weight: bold;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 12px 24px;
+    text-decoration: none;
+}
+.btn-info:hover {
+    background-color: var(--primary50);
 }
