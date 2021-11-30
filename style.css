@@ -42,7 +42,8 @@ body {
 
 h1, 
 h2, 
-h3 {
+h3,
+h4 {
     font-family: 'Neucha', cursive;
     line-height: 1.2em;
     font-weight: normal;
@@ -56,8 +57,21 @@ h3 {
     font-size: 34px;
 }
 
+h4 {
+    font-size: 24px;
+}
+
+.neucha {
+    font-family: 'Neucha', cursive;
+    font-size: 34px;
+}
+
 .text-orange {
     color: var(--primary);
+}
+
+.text-gray {
+    color: var(--dark50);
 }
 
 .text-white {
@@ -82,6 +96,10 @@ h3 {
     margin-top: 30px;
 }
 
+.mt-20 {
+    margin-top: 20px;
+}
+
 /*** PADDING ***/
 /* padding-top */
 
@@ -93,7 +111,9 @@ h3 {
 .bg-image {
     position: relative;
     overflow: hidden;
+}
 
+.bg-color-light {
     background-color: var(--light);
 }
 
@@ -243,4 +263,16 @@ a > h3 + p {
 
 .card-style:hover p {
     color: var(--white);
+}
+
+/* FOURTH PAGE */
+.line-brown {
+    background-color: var(--brown);
+}
+
+.line-text-decor {
+    text-transform: uppercase;
+    margin-left: 10px;
+    color: var(--white);
+    font-weight: bold;
 }
