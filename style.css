@@ -64,6 +64,7 @@ h4 {
 .neucha {
     font-family: 'Neucha', cursive;
     font-size: 34px;
+    line-height: 1.2em;
 }
 
 .text-orange {
@@ -80,6 +81,14 @@ h4 {
 
 .text-white50 {
     color: var(--white50);
+}
+
+.text-dark {
+    color: var(--dark);
+}
+
+.text-dark50 {
+    color: var(--dark50);
 }
 
 /*** MARGINS ***/
@@ -279,6 +288,7 @@ a > h3 + p {
 }
 
 .line-text-decor {
+    margin-bottom: 20px;
     text-transform: uppercase;
     margin-left: 10px;
     color: var(--white);
@@ -291,6 +301,7 @@ a > h3 + p {
 }
 
 .line-brown-decor {
+    margin-bottom: 20px;
     text-transform: uppercase;
     margin-left: 10px;
     color: var(--brown);
